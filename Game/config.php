@@ -35,7 +35,7 @@ Dica:
     }
 </style>
 <h1>The Game</h1> <!-- Perdi! -->
-<form action="check.html" method="get">
+<form action="/Game/check.php" method="get">
     <label for="jogadores">Número de Jogadores:</label><br>
     <input type="number" name="jogadores" min="0" value="<?php echo $_GET['jogadores'] ?>">
     <input type="submit" value="Enviar">
