@@ -38,6 +38,6 @@ Dica:
 <h1>The Game</h1> <!-- Perdi! -->
 <form action="check.html" method="get">
     <label for="jogadores">Número de Jogadores:</label><br>
-    <input type="number" name="jogadores">
+    <input type="number" name="jogadores" value="<?php echo $GET['jogadores'] ?>">
     <input type="submit" value="Enviar">
 </form>
