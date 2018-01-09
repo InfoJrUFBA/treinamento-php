@@ -25,3 +25,8 @@ Dica:
 
   */
 ?>
+<form action="check.html" method="get">
+    <label for="jogadores">Número de Jogadores</label><br>
+    <input type="number" name="jogadores">
+    <input type="submit" value="Enviar">
+</form>
