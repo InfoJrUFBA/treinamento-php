@@ -32,12 +32,11 @@ Dica:
     input[type=number] {
         -moz-appearance: textfield;
         appearance: textfield;
-        margin: 0;
     }
 </style>
 <h1>The Game</h1> <!-- Perdi! -->
 <form action="check.html" method="get">
     <label for="jogadores">Número de Jogadores:</label><br>
-    <input type="number" name="jogadores" value="<?php echo $GET['jogadores'] ?>">
+    <input type="number" name="jogadores" min="0" value="<?php echo $_GET['jogadores'] ?>">
     <input type="submit" value="Enviar">
 </form>
