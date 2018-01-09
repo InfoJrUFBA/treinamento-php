@@ -1,12 +1,11 @@
-<?php
+<?php 
+	require_once 'funcaoColuna.php';
+	
+	$players = $_GET['players'];
+		
+	echo "<form action=\"resultado.php\" method=\"POST\" id=\formResultado\">";
+	escreveInput($players);
+	echo "<br /><input type=\"submit\" value=\"Enviar\">";
+	echo "</form>";
 
-/*
-
-  1 - Importe o arquivo "funcaoColuna.php" utilizando o require_once.
-
-  2 - Crie um Formulario que passará os dados via POST para resultado.php
-
-  3 - Dentro do formulário, chame a função "escreveInput" passando como parâmetro o número de jogadores que chegou nessa
-  página via GET.
-
-  4 - Antes de finalizar o formulário, crie um botão de Submit, porque a nossa função acima só cria os Inputs.
+?>
