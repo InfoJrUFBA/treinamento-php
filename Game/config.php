@@ -12,6 +12,9 @@
                 -moz-appearance: textfield;
                 appearance: textfield;
             }
+            html, body {
+                font-family: 'Segoe UI', sans-serif;
+            }
         </style>
     </head>
     <body>

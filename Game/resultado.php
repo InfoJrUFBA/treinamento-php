@@ -4,6 +4,11 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Resultado</title>
+        <style>
+            html, body {
+                font-family: 'Segoe UI', sans-serif;
+            }
+        </style>
     </head>
     <body>
         <?php
