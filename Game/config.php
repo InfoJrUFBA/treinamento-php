@@ -1,27 +1,28 @@
-<?php
-/*
-1 - Crie um Formulário que Envie Dados para check.php
-
-2 - O dado passado deve ser: "jogadores"
-
-Dica:
-
-  Lembrem-se que o que define a chave da variavél que será passada para a página é o atributo "name" no input. Observe:
-
-  <input type="text" name="nomeDaVariavel">
-
-3 - A variavél "jogadores", representa o Numero de Jogadores, logo a <label> desse <input> deve conter essa informação.
-
-4 - Os inputs devem utilizar o atributo "value", sendo igual ao valor da variavel $_GET['nomeDaVariavel']. Isso será bastante
-útil se a página check.php fazer um redicrionamento de volta para config.php.
-
-  Dica: Veja como vocês podem utilizar o atributo "value" da tag <input>:
-    Nome: <input type="text" name="fname" value="John">
-
-  Mas se o Nome estivesse em alguma variavél?
-    Nome: <input type="text" name="name" value=<?php echo $minhaVariavel; ?> >
-
-  Mais detalhes em: https://www.w3schools.com/tags/att_input_value.asp
-
-  */
-?>
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Configuração</title>
+        <style media="screen">
+            input[type=number]::-webkit-inner-spin-button {
+                -webkit-appearance: none;
+            }
+            input[type=number] {
+                -moz-appearance: textfield;
+                appearance: textfield;
+            }
+            html, body {
+                font-family: 'Segoe UI', sans-serif;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>The Game</h1> <!-- Perdi! -->
+        <form action="/Game/check.php" method="get">
+            <label for="jogadores">Número de Jogadores:</label><br>
+            <input type="number" name="jogadores" min="0" value="<?php echo $_GET['jogadores'] ?>">
+            <input type="submit" value="Enviar">
+        </form>
+    </body>
+</html>

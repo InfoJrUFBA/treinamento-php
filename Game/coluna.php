@@ -1,12 +1,31 @@
 <?php
-
-/*
-
-  1 - Importe o arquivo "funcaoColuna.php" utilizando o require_once.
-
-  2 - Crie um Formulario que passará os dados via POST para resultado.php
-
-  3 - Dentro do formulário, chame a função "escreveInput" passando como parâmetro o número de jogadores que chegou nessa
-  página via GET.
-
-  4 - Antes de finalizar o formulário, crie um botão de Submit, porque a nossa função acima só cria os Inputs.
+require_once("funcaoColuna.php");
+session_start();
+?>
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Pontuações</title>
+        <style media="screen">
+            input[type=number]::-webkit-inner-spin-button {
+                -webkit-appearance: none;
+            }
+            input[type=number] {
+                -moz-appearance: textfield;
+                appearance: textfield;
+            }
+            html, body {
+                font-family: 'Segoe UI', sans-serif;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Pontuação dos Jogadores</h1>
+        <form action="resultado.php" method="post">
+            <?php escreveInput($_SESSION["jogadores"]); ?>
+            <br><input type="submit" value="Enviar">
+        </form>
+    </body>
+</html>
