@@ -1,3 +1,4 @@
+
 <?php
     function analise ($jogadores){
         if ($jogadores > 10) {
