@@ -1,5 +1,16 @@
 <?php
+    session_start();
+    function escreverInput($a){
+        for ($i=1; $i <= $a; $i++) {
+            ?>
+            <label for="jogador"<?php echo $i;?> > Jogador <?php echo $i; ?> </label>
+            <input type="text" name="<?php echo $i; ?>" id="jogador <?php echo $i; ?> "> <br>
 
+            <?php
+        }
+    }
+    ?>
+<?php
  /*
 
  1 - Faça uma função chamada "escreveInput" que recebe um valor como parâmetro, e não retorna nada.
@@ -22,3 +33,5 @@
   <input type="text" name="3" id="jogador3"><br>
 
   Dica: Provavelmente você usará alguma estrutura de repetição nessa tarefa e o recurso de concatenação de Strings.
+*/
+?>

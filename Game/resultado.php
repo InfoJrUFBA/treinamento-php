@@ -1,5 +1,15 @@
 <?php
+session_start();
+    // var_dump($_POST['4']);
+    $rand = $_POST;
+    $ganhador = array_rand($rand,1);
+    if ($ganhador == Submit) {
+      $ganhador = array_rand($rand,1);
+    }
+?>
 
+<h1> O jogador <?php echo $ganhador; ?> foi o Vencedor com <?php echo $_POST["$ganhador"] ?>  pontos! </h1>
+<?php
 /*
 
 Achou que ganharia aquele que colocou o maior ou o menor número??? Errado! Esse jogo é trapaceiro.
@@ -33,3 +43,5 @@ E como escolheremos o vencedor aleatoriamente? Bom... essa é a sua missão! Ach
 <h1>O Jogador X foi o Vencedor com Y pontos</h1>
 
   Dica: Lembre-se que você usará o poder da Concatenação de String
+*/
+?>

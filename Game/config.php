@@ -1,4 +1,15 @@
 <?php
+  session_start();
+?>
+
+<form class="login" action="check.php" method="get">
+<label for="numeroDeJogadores"> Numero de jogadores </label><br>
+<input type="number" name="jogadores" id="numeroDeJogadores" value="<?php echo $_GET['jogadores'] ?>" ><br><br>
+<input type="submit" name="submit" value="resultado">
+
+</form>
+
+<?php
 /*
 1 - Crie um Formulário que Envie Dados para check.php
 

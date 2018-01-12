@@ -1,4 +1,17 @@
-<?php
+ <?php
+ session_start();
+
+ $a = $_GET['jogadores'];
+
+function analise($a){
+  if($a > 10){
+    return true;
+  }
+  else {
+    return false;
+  }
+}
+
 /*
     1 - Crie uma Função "analise" que recebe uma variável.
 
@@ -17,3 +30,4 @@
 
     2 - Se a variável passada para função "analise" for maior que 10, a função deve retornar "false", caso contrário "true".
 */
+?>

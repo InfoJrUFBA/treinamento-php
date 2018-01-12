@@ -1,3 +1,20 @@
+ <?php
+  session_start();
+
+  require_once("funcaoCheck.php");
+
+ $bool =  analise($_GET['jogadores']);
+  if($bool){
+    header('Location: coluna.php?jogadores='.$a);
+    exit;
+  }
+  else {
+    header("Location: config.php?jogadores=". $a);
+    exit;
+  }
+
+ ?>
+
 <?php
 /*
 
