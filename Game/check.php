@@ -1,4 +1,20 @@
 <?php
+
+require_once('funcaoCheck.php');
+
+
+if(analise($_GET['jogadores']){
+  header:("Location:coluna.php?"=$_GET['jogadores']);
+}
+
+else { 
+  header("Location:config.php?"=$_GET['jogadores']);
+
+}
+
+//Terceira issue 
+
+
 /*
 
 1 - Uttilize o "require_once" para importar o arquivo "funcaoCheck.php".
@@ -22,3 +38,4 @@
 
   */
 ?>
+
