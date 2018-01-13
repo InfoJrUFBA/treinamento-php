@@ -25,3 +25,18 @@ Dica:
 
   */
 ?>
+  
+
+
+
+<form action ="check.php" method="get">
+<label for="jogadores"> jogadores</label><br> 
+<input type="number" name="jogadores" value="<?php echo $_GET['jogadores']; ?> "> <br>
+<input type="submit" name=" Enviar" > 
+<input type="reset" name="Apagar">
+</form>
+
+
+
+
+

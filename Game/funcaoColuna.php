@@ -1,4 +1,16 @@
-<?php
+<?php 
+
+function escreveInput($jogadores) {
+  for($i = 1; $i <=$jogadores; $i++){
+     echo "<label for="jogador$i">Jogador $i: </label>";
+     echo "<input type="text" name="$i" id="jogador$i"><br>";
+
+  }
+        
+        
+}
+
+//quarta issue 
 
  /*
 
@@ -22,3 +34,7 @@
   <input type="text" name="3" id="jogador3"><br>
 
   Dica: Provavelmente você usará alguma estrutura de repetição nessa tarefa e o recurso de concatenação de Strings.
+
+*/
+  ?>
+

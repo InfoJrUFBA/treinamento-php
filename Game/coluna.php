@@ -1,6 +1,5 @@
 <?php
-
-/*
+-/*
 
   1 - Importe o arquivo "funcaoColuna.php" utilizando o require_once.
 
@@ -10,3 +9,14 @@
   página via GET.
 
   4 - Antes de finalizar o formulário, crie um botão de Submit, porque a nossa função acima só cria os Inputs.
+ */
+require_once('funcaoColuna.php');
+session_start();
+?>
+
+<?php escreveInput($_GET['jogadores'] id=formResultado); ?>
+<form action ="resultado.php" method="POST"> 
+<input type="submit"  value=" Enviar"  >
+
+ </form>
+
