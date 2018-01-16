@@ -25,10 +25,25 @@ Dica:
 
   */
     ?>
- 
-	<form>
-		<label for="player">Número de Jogadores</label>
-		<input type="text" name="jogadores" id="player" value=<?php echo $jogadores;?>>
-	</form>
+ <!DOCTYPE html>
+ <html>
+ <head>
+   <title>PHP Game</title>
+   <meta charset="utf-8">
+   <link rel="stylesheet" type="text/css" href="style.css">
+ </head>
+ <body>
+ <div class="dform">
+  <form action="check.php" method="_GET" id="fo">
+    <label for="player">Número de Jogadores</label>
+    <input type="text" name="jogadores" id="player" value="<?php echo $_GET['jogadores']?>">
+    <button id="send" type="submit" >Enviar</button>
+  </form>
+</div>
+ </body>
+ </html>
+
+	
+
 
 

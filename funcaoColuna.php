@@ -23,10 +23,10 @@
 
   Dica: Provavelmente você usará alguma estrutura de repetição nessa tarefa e o recurso de concatenação de Strings.
 */
-
-  $escreverInput ();
-  while ( escreverInput<= 3) {
-  echo "<label for="jogadorX">Jogador X</label>
-    <input type="text" name="X" id="jogadorX"><br>";
+function escreveInput ($valorQualquer){
+  for ( $i=0 ; $i <= $valorQualquer ; $i++) { 
+    echo "<label for=\"jogador" . $i . "\">Jogador " . $i . "</label><input type=\"text\" name=\"" . $i .  "\" id=\"jogador" . $i . "\"><br>";
   }
-  ?>
+}
+
+?>

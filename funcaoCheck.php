@@ -17,8 +17,8 @@
 
     2 - Se a variável passada para função "analise" for maior que 10, a função deve retornar "false", caso contrário "true".
 */
-    function analise ($entrada) {
-      if ( $entrada > 10) {
+    function analise ($jogadores) {
+      if ( $jogadores > 10) {
         return false;
       }
       else {

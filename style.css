@@ -1,0 +1,115 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background-color: gray;
+}
+
+#fo{
+	position: absolute;
+	align-self: center;
+	font-size: 60px;
+}
+
+#for{
+	position: absolute;
+	align-self: center;
+	font-size: 30px;
+}
+
+#player{
+	font-size: 40px;
+	width: 60px;
+	border-radius: 10px;
+	text-align: center;
+}
+
+#send{
+	font-size: 30px;
+	border-radius: 20px;
+	padding: 5px;
+
+	}
+#send:hover {
+	background-color: green;
+	color: white;
+}
+#jogador0{
+	font-size: 40px;
+	width: 60px;
+	border-radius: 10px;
+	text-align: center;
+	margin: 0 0 5px 15px;
+}
+#jogador1{
+	font-size: 40px;
+	width: 60px;
+	border-radius: 10px;
+	text-align: center;
+	margin: 0 0 5px 15px;
+}
+#jogador2{
+	font-size: 40px;
+	width: 60px;
+	border-radius: 10px;
+	text-align: center;
+	margin: 0 0 5px 15px;
+}
+#jogador3{
+	font-size: 40px;
+	width: 60px;
+	border-radius: 10px;
+	text-align: center;
+	margin: 0 0 5px 15px;
+}
+#jogador4{
+	font-size: 40px;
+	width: 60px;
+	border-radius: 10px;
+	text-align: center;
+	margin: 0 0 5px 15px;
+}
+#jogador5{
+	font-size: 40px;
+	width: 60px;
+	border-radius: 10px;
+	text-align: center;
+	margin: 0 0 5px 15px;
+}
+#jogador6{
+	font-size: 40px;
+	width: 60px;
+	border-radius: 10px;
+	text-align: center;
+	margin: 0 0 5px 15px;
+}
+#jogador7{
+	font-size: 40px;
+	width: 60px;
+	border-radius: 10px;
+	text-align: center;
+	margin: 0 0 5px 15px;
+}
+#jogador8{
+	font-size: 40px;
+	width: 60px;
+	border-radius: 10px;
+	text-align: center;
+	margin: 0 0 5px 15px;
+}
+#jogador9{
+	font-size: 40px;
+	width: 60px;
+	border-radius: 10px;
+	text-align: center;
+	margin: 0 0 5px 15px;
+	
+}
+#jogador10{
+	font-size: 40px;
+	width: 60px;
+	border-radius: 10px;
+	text-align: center;
+}

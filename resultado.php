@@ -33,3 +33,20 @@ E como escolheremos o vencedor aleatoriamente? Bom... essa é a sua missão! Ach
 <h1>O Jogador X foi o Vencedor com Y pontos</h1>
 
   Dica: Lembre-se que você usará o poder da Concatenação de String
+*/
+ $venc = rand(1, count($_POST));
+echo "<h1>O Jogador $venc foi o vencedor com $_POST[$venc] pontos.</h1><br />";
+  
+ ?>
+ <style>
+ h1 {
+ 	position: absolute;
+ 	left: 200px;
+ 	top: 40%;
+ 	height: 100%;
+ 	font-size: 50px;
+ 	border-style: dotted 2px green;
+
+ }	
+
+ </style>

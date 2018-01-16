@@ -23,9 +23,11 @@
   */
   require_once('funcaoCheck.php');
 
-if($_GET == true ['jogadores']) 
-  header("location:coluna.php");
-else {
+  $jogadores = $_GET['jogadores'];
+
+if(analise($jogadores)){ 
+  header("location:coluna.php?qualquerCoisa=" . $jogadores);
+} else {
   header("location:config.php?user=Info");
 }
 
